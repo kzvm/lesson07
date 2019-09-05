@@ -3,16 +3,39 @@
 <head>
     <meta charset="utf-8" />
     <title>Lesson07 About Archery Academy</title>
-</head>
 
-<style>
-    h1 {
-        text-align: center;
-    }
-    p {
-        text-align: center;
-    }
-</style>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        aside {
+            text-align: center;
+        }
+
+        .item1 {
+            grid-area: video;
+            text-align: center;
+        }
+        .item2 {grid-area: content;}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'content content content content video video';
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+    </style>
+
+</head>
 
 <body>
     <header>
@@ -21,6 +44,11 @@
             <a href="index.html">Back to Home Page</a>
         </nav>
     </header>
+    <div class="grid-container">
+        <div class="item1">video<iframe width="320" height="240" src="https://www.youtube.com/embed/b9d_uTMq160" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+        <div class="item2">content
+    <aside>
         <p>
             Straight to the Point Archery is a non-profit archery education center founded<br />
             in 2005 by Giap Nguyen.  Our state of the art educational and training facility<br />
@@ -65,5 +93,6 @@
             Straight to the Point Archery’s staff has decades of experience in the archery<br />
             industry. We are committed to educating you with any questions that you may have.
         </p>
-
+    </aside></div>
+        </div>
 </body>
