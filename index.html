@@ -5,12 +5,31 @@
     <title>Lesson07 Assignment</title>
 
     <style>
+     
+     .hidden {
+         position: relative;
+         left: -10000px;
+         top: auto;
+     }
+
+     .hidden:focus {
+         left: 0;
+     }
+     img {
+         padding: .25rem;
+         margin: .25rem;
+     }
+        nav a {
+            padding: .5rem;
+            margin: .5rem;
+            background-color: lightskyblue;
+        }
         footer {
             background-image: url("footerImage.jpg");
             background-size: 1250px 120px;
             height: 120px;
             color: white;
-            margin-top: 475px;
+            margin-top: 550px;
         }
 
         aside {
@@ -24,6 +43,7 @@
 
 
 <body>
+    <a href="#main-content" class="hidden">Skip to main contet</a>
     <header>
         <section class="header">
             <h1>Straight to the Point Archery</h1>
@@ -32,13 +52,13 @@
     </header>
 
         <nav>
-            <a href="about.html">About</a> /
-            <a>Instructors Information</a> /
+            <a href="about.html">About</a>
+            <a>Instructors Information</a>
             <a>Classes and Details</a>
         </nav>
 
         <aside>
-            <section>
+            <section id="main-content">
                 <h3>Instructors</h3>
                 <figure>
                     <img src="instructor-bio-image3.png" alt="Instructor Picture" />
